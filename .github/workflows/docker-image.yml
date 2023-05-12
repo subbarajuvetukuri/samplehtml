@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag subbaraju7899/node-test:$(date +%s)
+      run: docker build . --file Dockerfile --tag subbaraju7899/htmltestimage:latest
       
     - name: Docker Push
-      run: docker push subbaraju7899/node-test
+      run: docker push subbaraju7899/htmltestimage
